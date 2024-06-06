@@ -91,7 +91,7 @@ public class RegisterActivity extends AppCompatActivity {
   }
 
   public void sendDataToApi(String name, String email, String date, String password) {
-    String url = "http://10.0.2.2:3100/api/registrar"; // Cambia localhost a 10.0.2.2 si usas un emulador
+    String url = "http://10.0.2.2:3100/api/"; // Cambia localhost a 10.0.2.2 si usas un emulador
 
     JSONObject jsonBody = new JSONObject();
     try {

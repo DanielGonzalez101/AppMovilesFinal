@@ -23,7 +23,7 @@ import org.json.JSONObject;
 
 public class LoginActivity extends AppCompatActivity {
 
-  EditText edtUser, edtPassword;
+  EditText edtUsuario, edtContraseña;
   Button btnLogin, btnRegister;
   SharedPreferences sharedPreferences;
   String savedUser, savedPassword;
@@ -34,8 +34,8 @@ public class LoginActivity extends AppCompatActivity {
     setContentView(R.layout.activity_login);
 
 //      Traemos los datos
-    edtUser = findViewById(R.id.edtUser);
-    edtPassword = findViewById(R.id.edtPassword);
+    edtUsuario = findViewById(R.id.edtUsuario);
+    edtContraseña = findViewById(R.id.edtPassword);
     btnLogin = findViewById(R.id.btnLogin);
     btnRegister = findViewById(R.id.btnRegister);
     sharedPreferences = getSharedPreferences("user", Context.MODE_PRIVATE);
@@ -47,8 +47,8 @@ public class LoginActivity extends AppCompatActivity {
       public void onClick(View v) {
 //                Validamos los datos
         // Validamos los datos
-        String user = edtUser.getText().toString();
-        String password = edtPassword.getText().toString();
+        String user = edtUsuario.getText().toString();
+        String password = edtContraseña.getText().toString();
 
         if (user.isEmpty() || password.isEmpty()) {
           Toast.makeText(LoginActivity.this, "Por favor llenar los campos ", Toast.LENGTH_SHORT).show();

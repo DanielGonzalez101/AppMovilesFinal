@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".DetailsActivity"
     android:orientation="vertical"
-    android:background="@drawable/fondo"
+    android:background="@drawable/fondeishon"
     android:gravity="center_vertical|center_horizontal">
 
     <LinearLayout
@@ -19,9 +19,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtName"
-            android:text="Name"
+            android:text="Nombre"
             android:textSize="50sp"
-            android:textColor="@color/red"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:gravity="center"/>
         <TextView
@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/txtId"
             android:text="Id"
-            android:textColor="@color/black"/>
+            android:textColor="@color/white"/>
     </LinearLayout>
 
     <ImageView
