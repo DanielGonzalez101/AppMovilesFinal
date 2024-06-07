@@ -46,7 +46,6 @@ public class LoginActivity extends AppCompatActivity {
     btnLogin.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
-//                Validamos los datos
         // Validamos los datos
         String email = edtUser.getText().toString();
         String password = edtPassword.getText().toString();
